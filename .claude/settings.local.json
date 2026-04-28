@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew :app:assembleDebug)",
+      "Read(//c/Users/Hp/.gradle/caches/modules-2/files-2.1/**)",
+      "Read(//tmp/**)",
+      "Bash(unzip -q -o classes.jar -d classes)",
+      "Bash(xargs -I {} basename {})",
+      "Read(//tmp/revolut-src/com/revolut/cardpayments/api/**)",
+      "Read(//c/tmp/revolut-src/com/revolut/cardpayments/api/**)",
+      "Read(//c/tmp/**)",
+      "Bash(javap -p /tmp/revolut-aar/classes/com/revolut/cardpayments/core/api/UserType.class /tmp/revolut-aar/classes/com/revolut/cardpayments/core/api/FailureReason.class)",
+      "Read(//c/Program Files/Android/Android Studio/jbr/**)",
+      "Read(//c/Program Files/Android/Android Studio/jbr/bin/**)",
+      "Bash(grep -ao '[A-Z_][A-Z_0-9]\\\\{2,\\\\}' /tmp/revolut-aar/classes/com/revolut/cardpayments/core/api/UserType.class)",
+      "Bash(grep -ao '[A-Z][a-zA-Z_0-9]\\\\{2,\\\\}' /tmp/revolut-aar/classes/com/revolut/cardpayments/core/api/FailureReason.class)",
+      "Bash(grep -ao '[/a-z][a-z0-9/_.{}-]\\\\{6,\\\\}' /tmp/revolut-aar/classes/com/revolut/cardpayments/client/data/PaymentService.class /tmp/revolut-aar/classes/com/revolut/cardpayments/client/data/OrderDetailsService.class /tmp/revolut-aar/classes/com/revolut/cardpayments/client/data/CardService.class)"
+    ]
+  }
+}
